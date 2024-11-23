@@ -27,6 +27,8 @@ function moveAll(from, to) {
       btnMoveRight.disabled = true;
     } else {
       btnMoveAllRight.disabled = false;
+      btnMoveRight.disabled = true;
+
     }
 
     let leftdisable = from.getAttribute("class");
@@ -35,6 +37,7 @@ function moveAll(from, to) {
       btnMoveLeft.disabled = true;
     } else {
       btnMoveAllLeft.disabled = false;
+      btnMoveLeft.disabled = true;
     }
   });
 }
@@ -61,6 +64,8 @@ function updateBtns() {
 
   btnMoveRight.disabled = !leftHasSelected;
   btnMoveLeft.disabled = !rightHasSelected;
+  btnMoveAllLeft.disabled = false;
+  btnMoveAllRight.disabled = false;
 }
 updateBtns();
 [leftCont, rightCont].forEach((cont) =>

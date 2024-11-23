@@ -20,9 +20,14 @@ h2{
     gap:1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    padding-left: 20px;
     border: 2px solid #161515;
+    label{
+        padding-left: 10px;
+    }
     
 }
+
 .middle{
     border-top: 2px solid;
     border-bottom: 2px solid;
@@ -38,7 +43,9 @@ h2{
     /* width: 60%; */
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 #moveAllRight,#moveRight,#moveLeft,#moveAllLeft{
     border: 2px solid;
+    cursor: pointer;
 }
