@@ -64,8 +64,8 @@ function updateBtns() {
 
   btnMoveRight.disabled = !leftHasSelected;
   btnMoveLeft.disabled = !rightHasSelected;
-  btnMoveAllLeft.disabled = false;
-  btnMoveAllRight.disabled = false;
+  // btnMoveAllLeft.disabled = false;
+  // btnMoveAllRight.disabled = false;
 }
 updateBtns();
 [leftCont, rightCont].forEach((cont) =>
